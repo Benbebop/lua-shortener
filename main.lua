@@ -122,7 +122,7 @@ function scan(dir)
 	end
 end
 
-scan("Benbebot-main")
+scan(args[2])
 
 local fins, fin = uv.gettimeofday()
 
