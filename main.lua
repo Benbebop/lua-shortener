@@ -20,7 +20,7 @@ local processedBytes, bytes, removedBytes, commentedBytes, replacedBytes, files 
 
 local debuts, debut = uv.gettimeofday()
 
-local nonSpacePost = {" ", "(", ")", "[", "]", "{", "}", ",", ".", "=", "~", "<", ">", "+", "-", "*", "/", "\"", "\t", "\n", "\r"}
+local nonSpacePost = {" ", "(", ")", "[", "]", "{", "}", ",", ".", "=", "~", "<", ">", "+", "*", "/", "\"", "\t", "\n", "\r"}
 
 function compress( file )
 	local dans, dehors = io.open( file, "rb" ), io.open( file:sub(1, -5) .. "_short.lua", "wb" )
